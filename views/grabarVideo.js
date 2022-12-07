@@ -122,7 +122,7 @@ const init = () => {
                     document.body.appendChild(a);
                     a.style = "display: none";
                     a.href = urlParaDescargar;
-                    a.download = "grabacion_parzibyte.me.webm";
+                    a.download = "Grabación entrevista prueba.webm";
                     // Hacer click en el enlace
                     a.click();
                     // Y remover el objeto

@@ -1,7 +1,9 @@
-const express = require("express")
+import express from "express"
 const app = express()
-const path = require ("path")
-const { completarDatos, sendVideo,  } = require ("./function")
+import path from "path"
+import { completarDatos, sendVideo } from "./function.js"
+import * as url from 'url';
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const port = 8080
 
 app.use(express.static(path.join(__dirname, "/views")))

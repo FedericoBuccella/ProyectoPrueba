@@ -1,14 +1,12 @@
-const path = require("path")
 
-function completarDatos( req, res){
+import * as url from 'url';
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+import path from "path"
+
+export function completarDatos( req, res){
     res.sendFile(path.join(__dirname, "./views/entrevista.html"))
 }
 
-function sendVideo (req, res){
+export function sendVideo (req, res){
     res.sendFile(path.join(__dirname, "./views/grabarVideo.html"))
-}
-
-module.exports= {  
-    completarDatos,
-    sendVideo
 }
