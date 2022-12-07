@@ -10,8 +10,8 @@ app.use(express.static(path.join(__dirname, "/views")))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get("/app", inicio)
-app.get("/app/entrevista", completarDatos)
-app.get("/app/grabarVideo", sendVideo)
+app.get("/", inicio)
+app.get("/entrevista", completarDatos)
+app.get("/grabarVideo", sendVideo)
 
 app.listen(PORT, () => {console.log('Servidor estableciendo conexión con el puerto')})
