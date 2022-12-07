@@ -10,3 +10,7 @@ export function completarDatos( req, res){
 export function sendVideo (req, res){
     res.sendFile(path.join(__dirname, "./views/grabarVideo.html"))
 }
+
+export function inicio (req, res) {
+    res.sendFile(path.join(__dirname, "./views/inicio.html"))
+}
