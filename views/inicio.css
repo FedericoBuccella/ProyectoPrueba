@@ -1,0 +1,40 @@
+body {
+    background-image: url("https://sidus.com.ar/assets/img/destacado2.jpg");
+    background-size: cover;
+}
+
+.titulo {
+   font-size: 50px;
+}
+
+.parrafo {
+    color: rgb(255, 255, 255);
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 657px;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    text-align: center;
+    background-color: #56b287;
+    height: 300px;
+    width: 950px;
+    border-radius: 10px;
+}
+
+.contenedor3 {
+    padding-top: 20px;
+}
+
+.boton {
+    height: 50px;
+    width: 120px;
+}
