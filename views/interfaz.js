@@ -32,6 +32,7 @@ export class Interfaz {
       const gameOverHTML = `
         <h1>Result</h1>
         <h2 id="score">Your scores: ${score}</h2>
+        <button class="btn btn-primary" id="btnDetenerGrabacion">Detener</button>
         `;
   
       const element = document.getElementById("quiz");
@@ -43,3 +44,5 @@ export class Interfaz {
       element.innerHTML = `Question ${currentIndex} of ${total}`;
     }
   }
+
+

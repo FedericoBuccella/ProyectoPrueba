@@ -1,8 +1,8 @@
 export const data = [
     {
-      question: "Cuanto es 1 + 1 ",
-      choices: ["5", "3", "11", "2"],
-      answer: "2",
+      question: "¿CUALES SON TUS EXPERIENCIAS LABORALES?",
+      choices: ["SIGUIENTE"],
+      answer: "SIGUIENTE",
     },
     {
       question: "Como es el segundo nombre de Lionel Messi",
