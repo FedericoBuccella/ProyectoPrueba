@@ -14,4 +14,4 @@ app.get("/", inicio)
 app.get("/entrevista", completarDatos)
 app.get("/grabarVideo", sendVideo)
 
-app.listen(PORT, () => {console.log('Servidor estableciendo conexión con el puerto')})
+app.listen(PORT, () => {console.log("Conectado a puerto 3000")})

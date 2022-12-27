@@ -1,8 +1,5 @@
-import path from "path"
-import * as url from 'url';
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-
 const init = () => {
+    
     const tieneSoporteUserMedia = () =>
         !!(navigator.mediaDevices.getUserMedia)
 
@@ -125,7 +122,7 @@ const init = () => {
                     let a = document.createElement("a");
                     document.body.appendChild(a);
                     a.style = "display: none";
-                    a.href = path.join(__dirname, "../Grabaciones");
+                    a.href = urlParaDescargar;
                     a.download = "Grabación entrevista prueba.webm";
                     // Hacer click en el enlace
                     a.click();
@@ -157,4 +154,6 @@ const init = () => {
 
     llenarLista();
 }
+
 document.addEventListener("DOMContentLoaded", init);
+
